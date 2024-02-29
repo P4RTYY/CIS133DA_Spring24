@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 10px;
+}
+table, td, th {
+    border-collapse: collapse;
+    font-size: 1rem;
+    padding:1rem;
+}
+.tdRight {
+    text-align: right;
+}
+
+th {
+    background-color: darkgreen;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+tbody tr:nth-of-type(even) {
+    background-color:lightgreen
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
