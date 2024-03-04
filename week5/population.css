@@ -1,0 +1,41 @@
+.poptable {
+    border-collapse: collapse;
+    font-size: 1rem;
+    padding: 25px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pics {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: red;
+    color: white;
+}
+
+tr:nth-of-type(odd   ):not(.imgs) {
+    background-color:yellow
+}
+
+.tdRight {
+    text-align: right;
+}
+
+.cityImg {
+    width: 95%;
+    height: 150px;
+}
+
+#body1  {
+    background-image: linear-gradient(yellow,red);
+    min-height: 100vh;
+}
+
+.table2 {
+    margin-left: auto;
+    margin-right: auto;
+}
