@@ -11,13 +11,6 @@
       }
       #wrapper { 
         background-color: #b3c7e6; 
-        width: 80%;
-        margin: auto;
-        min-width:850px;
-      } 
-      nav { 
-        width: 150px;
-        padding: 20px;
       } 
       main { 
         background-color: #FFFFFF;
@@ -47,6 +40,38 @@
         padding-bottom:20px;
         background-color: #FFFFFF;
       }	
+      li {
+        list-style-type: none;
+      }
+      .list {
+        text-decoration: none;
+      }
+      a:link {
+        color: #0000EE;
+      }
+      a:visited {
+        color: #0000EE;
+      }
+      a:hover {
+        color:red
+      }
+      #navbar {
+        display: table-cell;
+        height: auto;
+        width: 20%;
+        height: 100%;
+        background-color: #b3c7e6;
+        vertical-align: top;
+      }
+      #body1 {
+        width: 80%;
+        display: table-cell;
+        height: auto;
+        vertical-align: top;
+      }
+      #content {
+        display: table;
+      }
   </style> 
 </head>
 <body>
@@ -54,24 +79,32 @@
     <header>
       <h1>Lighthouse Island Bistro</h1>
     </header>
-    <nav>
-      <a href="index.html">Home</a><br>
-      <a href="rooms.html">Menu</a><br>
-      <a href="directions.html">Directions</a><br>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <main> 
-      <img src="./images/lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
-      <h2>Locally Roasted Free-Trade Coffee</h2>
-      <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
-      <h2>Specialty Pastries</h2>
-      <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
-      <h2>Lunchtime is Anytime</h2>
-      <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
-      <h2>Panoramic View</h2>
-      <p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
-    </main>
-    <footer>Copyright &copy; 2020</footer>
+    <div id="content">
+      <nav>
+        <div id="navbar">
+        <ul>
+          <li><a class="list" href="index.html">Home</a><br></li>
+          <li><a class="list" href="rooms.html">Menu</a><br></li>
+          <li><a class="list" href="directions.html">Directions</a><br></li>
+          <li><a class="list" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      </nav>
+      <div id="body1">
+      <main> 
+        <img style="float: right;" src="./images/lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+        <h2>Locally Roasted Free-Trade Coffee</h2>
+        <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+        <h2>Specialty Pastries</h2>
+        <p>Enjoy a selection of our fresh-baked, organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+        <h2>Lunchtime is Anytime</h2>
+        <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+        <h2>Panoramic View</h2>
+        <p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
+      </main>
+      <footer>Copyright &copy; 2020</footer>
+    </div>
+  </div>
   </div>
 </body>
 </html>
