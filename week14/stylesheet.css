@@ -1,19 +1,20 @@
-/* Reset default margin and padding */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #2da2aa; /* Light blue background */
+    background-color: #2da2aa;
 }
 
-/* Wrapper for the entire page */
+/* Page Wrapper */
+
 .wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/* Header styling */
+/* Header */
+
 .header {
     position: relative;
     background-image: url('Images/Header.png');
@@ -30,6 +31,7 @@ body, html {
 }
 
 /* Navigation styling */
+
 nav {
     background-color: #2367be; 
     text-align: center;
@@ -67,7 +69,8 @@ footer {
 }
 
 
-/* Page name styling */
+/* Page name */
+
 .page-name {
     position: absolute;
     top: 10px;
@@ -76,7 +79,8 @@ footer {
     font-weight: bold;
 }
 
-/* Home page content styling */
+/* Home page */
+
 .home-page .content {
     display: flex;
     flex-direction: row;
@@ -120,7 +124,8 @@ footer {
     background-color: white;
 }
 
-/* Gallery page content styling */
+/* Gallery page */
+
 .gallery-page .content {
     display: flex;
     flex-direction: column;
@@ -163,7 +168,8 @@ footer {
     padding: 10px;
 }
 
-/* Services page content styling */
+/* Services page */
+
 .services-page .content {
     display: flex;
     flex-direction: column;
@@ -202,7 +208,8 @@ footer {
     }
 }
 
-/* Contact page content styling */
+/* Contact page */
+
 .contact-page .content {
     display: flex;
     flex-direction: row;
@@ -284,7 +291,8 @@ footer {
     vertical-align: middle;
 }
 
-/* About page content styling */
+/* About page */
+
 .about-page .content {
     display: flex;
     flex-direction: column;
