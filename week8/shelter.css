@@ -14,20 +14,63 @@ header, aside, main, footer {
     text-align: center;
 }
 
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
 header {
     color: white;
-    background-color: blue;
+    background-color: blue; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.mascot {
+    height: 25px; 
+    margin-right: 5px;
+}
+
+.mascot-text {
+    font-size: 16px;
 }
 
 aside {
     background-color: yellow;
+    width:100%
 }
 
 aside > img {
     border-radius: 50%;
+    width: 80px;
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.amigo_div {
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amigo_div > img {
+    width: 180px;
+    height: 180px;
 }
 
 footer {
@@ -35,7 +78,52 @@ footer {
     background-color: blue;
 }
 
-header, footer {
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 75px auto 50px;
+    grid-template-areas:
+        "hdr hdr"
+        "aside main"
+        "ftr ftr";
+}
+
+header, aside, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    color: white;
+    background-color: blue;
+    grid-area: hdr;
+}
+
+aside {
+    background-color: yellow;
+    grid-area: aside main;
+    width: 100%;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    color: white;
+    background-color: blue;
+    grid-area: ftr;
+}
+
+.restName {
+    background-color: rgb(33,87,51);
+    color: white;
+    font-style: italic;
+    padding: 5px;
+    border-radius: 3px;
 }
 
 h1 {
@@ -43,21 +131,5 @@ h1 {
 }
 
 p {
-    color: blue;
-}
-
-.mascot {
-    height: 50px;
-    vertical-align: middle;
-}
-
-.amigo_div {
-    background-color: lightblue;
-    height: 200px;
-    width: 200px;
-}
-
-.amigo_div > img {
-    width: 180px;
-    height: 180px;
+    line-height: 24px;
 }
